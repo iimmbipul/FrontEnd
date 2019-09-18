@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Muli|Roboto&display=swap');
+body{
+    background: rgb(219, 219, 219);
+    margin: 0px;
+    padding: 0px;
+
+}
+.container{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 300px;
+    height: 370px;
+    border-radius: 10px;
+    
+    background: rgb(36, 35, 35);
+    
+    
+
+}
+ h2{
+    background: blue;
+    text-transform: uppercase;
+    padding: 10px 0 10px;
+    margin: 25px 0;
+    color:white;
+    position: relative;
+    left: -15px;
+    width: 330px;
+    text-align: center;
+    font-size: 30px;
+    
+    text-shadow: 1px 5px 10px rgb(105, 103, 103);
+
+}
+#para{
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-family: font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+
+}
+h2::before{
+    content: '';
+    background:  rgb(77, 94, 248);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 100%;
+    transform-origin: left;
+    transform: skewY(-50deg);
+    z-index: -1;
+}
+h2::after{
+    content: '';
+    background: rgb(77, 94, 248);
+    position: absolute;
+    top: 0;
+    
+    right: 0;
+    width: 15px;
+    height: 100%;
+    transform-origin: top right;
+    transform: skewY(-50deg);
+    z-index: -1;
+}
+.container:hover h2:after{
+    transform: skewY(50deg);
+}
+.container:hover h2:before{
+    transform: skewY(50deg);
+}
