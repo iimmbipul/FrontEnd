@@ -1,0 +1,43 @@
+body{
+    background-image: linear-gradient(rgb(232, 229, 247),rgb(160, 160, 163));
+}
+
+
+
+.main{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-40%,-50%);
+    background-color:none;
+    box-sizing: border-box;
+}
+.sub-f{
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(rgb(232, 229, 247),rgb(232, 229, 247));
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: -15px 21px 41px -2px rgb(129, 125, 125);
+}
+.sub-u{
+    height: 52px;
+    width: 100px;
+    background-image:linear-gradient(rgb(255, 255, 255), rgb(232, 229, 247));
+    position: relative;
+    top: -252px;
+    left: 27px;
+    transform: skewX(-45deg);
+    z-index: -1;
+}
+.sub-s{
+    height: 100px;
+    width: 52px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(232, 229, 247));
+    position: relative;
+    top: -126px;
+    left: 100px;
+    transform: skewY(-45deg);
+}
+
