@@ -1,0 +1,138 @@
+body{
+    background: linear-gradient(rgb(241, 241, 241),rgb(0, 0, 0));
+}
+.main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);}
+.same{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%,-50%);
+        z-index: -1;
+}
+.similar{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);}
+#a{
+    color:rgb(241, 241, 241);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+}
+#b{
+    color:rgb(226, 226, 226);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 35%, 100% 35%, 100% 65%, 0 65%);
+    position: relative;
+    top: -116px;
+    left: -26px;
+    transform: skewX(-57deg);
+    display: inline-block;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+}
+#c{
+    color:rgb(241, 241, 241);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    position: relative;
+    top: -232px;
+    left: -51px;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+}
+#d{
+    color:rgb(114, 114, 114);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    position: relative;
+    top: -22px;
+    left: -48px;
+    display: inline-block;
+    z-index: -1;
+    filter: blur(2.5px);
+    /* transform: skewY(0deg); */
+}
+#e{
+    color:rgb(114, 114, 114);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 35%, 100% 35%, 100% 65%, 0 65%);
+    position: relative;
+    top: -138px;
+    left: -75px;
+    transform: skewX(-35deg);
+    display: inline-block;
+    transform: skewX(-57deg);
+    z-index: -1;
+    filter: blur(2.5px);
+}
+#f{
+    color:rgb(114, 114, 114);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    position: relative;
+    top: -253px;
+    left: -99px;
+    /* transform: skewY(-9deg); */
+    display: inline-block;
+    z-index: -1;
+    filter: blur(2.5px);
+}
+#g{
+    color:rgb(255, 255, 255);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    position: relative;
+    top: 0px;
+    left: -7px;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+}
+#h{
+    color:rgb(255, 255, 255);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 35%, 100% 35%, 100% 65%, 0 65%);
+    position: relative;
+    top: -116px;
+    left: -33px;
+    transform: skewX(-57deg);
+    display: inline-block;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+}
+#i{
+    color:rgb(255, 255, 255);
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    position: relative;
+    top: -232px;
+    left: -61px;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+    transform: skewX(6deg);
+    display: inline-block;
+}
+.space{
+    letter-spacing: 10px;
+}
