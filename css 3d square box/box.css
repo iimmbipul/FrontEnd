@@ -9,7 +9,7 @@ body{
     left: 50%;
     top: 70%;
     transform: translate(-40%,-50%);
-    background-color:none;
+    
     box-sizing: border-box;
 }
 .sub-f{
