@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+
+body{
+    background: linear-gradient(to right, rgb(1, 1, 1),rgb(48, 0, 0));
+}
+.front{
+    
+    height: auto;
+    width: 500px;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Squada One', cursive;
+    
+    
+}
+#A{
+    font-size: 150px;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: skewY(-6deg);
+    color: snow;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+}
+#B{
+    font-size: 150px;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: skewY(-6deg);
+    color: snow;
+    position: relative;
+    top: -157px;
+    left: -6px;
+    text-shadow: -0.5px 0 #e3e0e0, 0 0.5px #e3e0e0, 0.5px 0 #e3e0e0, 0 -0.5px #e3e0e0;
+}
+#U{
+    color: rgb(236, 236, 68);
+    text-shadow: -1px 0 black,0 1px black,1px 0 black,0 -1px black;
+  
+   
+}
+#A:after{
+    letter-spacing: 10px;
+    content: 'ATTAINU';
+    position: absolute;
+    top: -9px;
+    left: -73px;
+    opacity: 0.8;
+    color: #787878;
+    filter: blur(3.5px);
+    transform-origin: left;
+    transform: skewX(42deg);
+    z-index: -2;
+}
+
+.image{
+    position: absolute;
+    top: 178px;
+    left: 797px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
