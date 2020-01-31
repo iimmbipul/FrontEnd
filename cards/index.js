@@ -29,7 +29,7 @@ class Input extends React.Component{
                     <option>Network Specialists</option>
                     <option>QA Testers</option>
                 </select>
-                <button onClick={()=>{this.props.sendFunctiontoInput(this.state);this.state.name=""}} >ADD</button>
+                <button onClick={()=>{this.props.sendFunctiontoInput(this.state)}} >ADD</button>
                     
             </div>
         )
