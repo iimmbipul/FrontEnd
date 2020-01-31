@@ -1,10 +1,10 @@
 body{
-    background-color: #e5e5e5;
+    background-color: #212121;
 }
 
 .container{
     width: 80%;
-    background-color: #e5e5e5;
+    background-color: #212121;
     margin: auto;
     height: auto;
 }
@@ -17,12 +17,14 @@ body{
 }
 .card{
     list-style: none;
+    border-radius: 8px;
     width: auto;
     height: 100px;
     margin: 30px;
     padding: 10px;
-    background-color: #e5e5e5;
-    box-shadow: 4px 4px 8px #a5a5a5, -4px -5px 8px #ffffff;
+    color: white;
+    background-color: #171717;
+    box-shadow: 4px 4px 20px #000000, -4px -5px 13px #424242;
 }
 ul{
     display: flex;
@@ -39,8 +41,10 @@ h2,h3{
 button{
     display: inline-block;
     margin: auto;
-    box-shadow: 4px 4px 8px #a9a9a9, -4px -5px 8px #ffffff;
-    background-color: #e5e5e5;
+    border: 0px;
+    color: wheat;
+    box-shadow: 4px 4px 13px #000000, -4px -5px 8px #2d2d2d;
+    background-color: #171717;
     border-radius: 8px;
     width: 47%;
 }
@@ -50,13 +54,15 @@ button{
     margin-top: 6px;
     top: 14px;
     height: auto;
-    background: #e5e5e5;
+    background: #212121;
     /* box-shadow: 4px 4px 8px #a5a5a5, -4px -5px 8px #ffffff; */
 }
 .leftContent input,.leftContent select{
     margin: 5px;
-    box-shadow: inset 4px 4px 8px #d2d2d2, inset -4px -5px 8px #ffffff;
-    height: 21px;
+    box-shadow: inset 4px 4px 8px #000000, inset -4px -5px 8px #2c2c2c;
+    height: 26px;
     border-radius: 8px;
-    background: #e5e5e5;
+    background: #212121;
+    border: 0px;
+    padding: 5px;
 }
