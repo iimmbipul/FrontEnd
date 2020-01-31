@@ -69,9 +69,11 @@ class Wrapper extends React.Component{
 
     sendDatatoList=(data)=>{
             console.log(data);
+            if(data.name){
             this.setState({
                 card:[...this.state.card,data]
             })
+        }
     }
     deleteDataFromCard = (index)=>{
         this.state.card.splice(index,1)
