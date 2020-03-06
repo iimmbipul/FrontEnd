@@ -13,6 +13,7 @@ class EditModal extends Component {
                 input:this.props.editData
             })
         }
+       
     }
     inputChangeHandler = (text)=>{
         this.setState({
@@ -37,18 +38,9 @@ class EditModal extends Component {
         }
     }
     render() {
-        let z=0
-        if(this.props.x>500){
-            z=30;
-        }
-        if(this.props.x>750){
-            z=60
-        }
-        if(this.props.x>1000){
-            z=90
-        }
-        let x= this.props.x-220+z
-        let y= this.props.y-50
+        
+        let x= this.props.x-250
+        let y= this.props.y-100
         const style={
             position:"absolute",
             top:y+"px",

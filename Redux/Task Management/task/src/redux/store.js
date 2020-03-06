@@ -66,6 +66,7 @@ function appReducerFunction(state=initialState,action){
                 card:[]
             }
             stateCopy.list.push(list);
+            try{localStorage.setItem("db", JSON.stringify(stateCopy))}catch(e){console.log(e)}
             return stateCopy;
         case "add_Card":
             let card = {
@@ -73,6 +74,7 @@ function appReducerFunction(state=initialState,action){
                 cardData : action.payload.data
             }
             stateCopy.list[action.payload.index].card.push(card);
+            try{localStorage.setItem("db", JSON.stringify(stateCopy))}catch(e){console.log(e)}
             return stateCopy;
         case "editing":
             stateCopy.editStatus=true;
@@ -87,10 +89,13 @@ function appReducerFunction(state=initialState,action){
             stateCopy.posCardId=posCardId;
             stateCopy.x=action.payload.x;
             stateCopy.y=action.payload.y;
+            try{localStorage.setItem("db", JSON.stringify(stateCopy))}catch(e){console.log(e)}
             return stateCopy;
         case "update_Data":
             stateCopy.list[stateCopy.posListId].card[stateCopy.posCardId].cardData = action.payload
             stateCopy.editStatus=false;
+            stateCopy.editData = "";
+            try{localStorage.setItem("db", JSON.stringify(stateCopy))}catch(e){console.log(e)}
             return stateCopy
         case "delete":
             let ListId = stateCopy.list.map(function(e) { return e.listId; }).indexOf(action.payload.listId)
@@ -98,10 +103,24 @@ function appReducerFunction(state=initialState,action){
             console.log("Delte",ListId,CardId);
             stateCopy.list[ListId].card.splice(CardId,1);
             console.log(stateCopy.list[ListId])
+            try{localStorage.setItem("db", JSON.stringify(stateCopy))}catch(e){console.log(e)}
             return stateCopy;
 
     }
-  return state;
+    
+    try{if (localStorage.getItem("db") === null) {
+        //...
+        return state;
+      }
+      else{
+        var retrievedObject = localStorage.getItem('db')
+        return JSON.parse(retrievedObject)
+      }}catch(err){
+        return state
+      }
+
+      
+  
 }
 
 
