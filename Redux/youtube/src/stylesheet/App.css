@@ -1,0 +1,169 @@
+body{
+  background: rgb(231, 231, 231);;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  min-height: 30px;
+  height: 9vh;
+  max-height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+}
+.navigation{
+  
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100%;
+  top: 25px;
+  width: 18vw;
+  position: fixed;
+  background: white;
+  z-index: 2;
+  
+  
+}
+.row1,.row2,.row3{
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.row1 a:link,.row2 a:link,.row3 a:link{
+  color: red;
+ width: 100%;
+ height: 20px;
+ background-color: gray;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.videoList{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  
+}
+.videoList a{
+  width: 50vw;
+  height: 150px;
+}
+.bodyArea{
+  display: flex;
+  position: relative;
+  top: 29px;
+  justify-content: flex-start;
+  
+  
+}
+.videoCard{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  
+  
+
+}
+.left,.right{
+  margin: 5px;
+}
+
+img{
+  height: 150px;
+  width: 240px;
+}
+
+.videoTitle{
+  display: block;
+  font-size: large;
+}
+.videoDescription{
+  display: block;
+  font-size: 12px;
+  height: 25px;
+  overflow: hidden;
+  word-break: break-all;
+  text-decoration: none;
+  font-family: serif;
+  font-style: normal;
+  white-space: nowrap;
+  max-width: 400px;
+}
+.videoChannelTitle{
+  display: block;
+  font-size: 9px;
+  white-space: pre-wrap;
+}
+.searchTitle{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 700px;
+  
+}
+.watchLater{
+  z-index: 2;
+}
+.globalVideoCard{
+  width: 710px;
+  display: flex;
+}
+.videoPlayerPage{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 4vw;
+}
+iframe{
+  min-width: 700px;
+  width: 40vw;
+  margin-left: 150px;
+  margin-top: 20px;
+  height: 30vw;
+  max-height: 900px;
+  border: none;
+}
+.relatedVideos{
+  display: flex;
+  max-width: 600px;
+  flex-wrap: wrap;
+ 
+}
+.sideCard{
+  display: flex;
+}
+
+.sideVideoCard{
+ 
+  display: flex;
+  
+  
+  
+}
+.sidevideoTitle{
+  max-width: 15vw;
+  font-size: 12px;
+}
+.sidevideoChannelTitle{
+  font-size: 10px;
+}
