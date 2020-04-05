@@ -1,2 +1,1 @@
-//this is indexq js file
-//this is second edit
+//this is indexq js file edited from gitgub
